@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .form-container { margin-bottom: 20px; }
+        #results { display: flex; flex-wrap: wrap; gap: 10px; }
+        .pokemon-card { border: 1px solid #333; padding: 10px; width: 150px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Pokédex</h1>
+
+    <div class="form-container">
+        <label for="id-input">ID: </label>
+        <input type="text" id="id-input" placeholder="Ex: 10">
+        
+        <label for="name-input">Nom: </label>
+        <input type="text" id="name-input" placeholder="Ex: Pikachu">
+
+        <label for="type-select">Type: </label>
+        <select id="type-select">
+            <option value="">Type</option>
+            <option value="Fire">Feu 🔥</option>
+            <option value="Water">Eau 💧</option>
+            <option value="Grass">Plante 🌿</option>
+            <option value="Electric">Électrique ⚡</option>
+            <option value="Poison">Poison ☠️</option>
+            <option value="Flying">Vol 🦅</option>
+            <option value="Bug">Insecte 🦗</option>
+            <option value="Normal">Normal 🦊</option>
+        </select>
+
+        <input type="button" id="filter-btn" value="Filtrer">
+    </div>
+
+    <div id="results"></div>  
+
+    <script src="script.js" defer></script>
+</body>
+</html>
